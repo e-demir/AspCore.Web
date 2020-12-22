@@ -22,6 +22,9 @@ namespace AspCore.Web
                 app.UseDeveloperExceptionPage();
             }
 
+            //To use files in wwwroot folder
+            app.UseStaticFiles();
+
             app.UseMvc(routes =>
             {
 
