@@ -9,9 +9,10 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Thanks</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h2>@Model.Name</h2>
+    <h2>Thank you,  @Model.Name</h2>
     <hr />
 
     @if (Model.WillAttend==true)
@@ -23,6 +24,6 @@
         @:Sorry, you won't catch us :(
     }
 
-    List the <a asp-action="List">attendees</a> 
+    List the <a asp-action="List" class="nav-link">attendees</a> 
 </body>
 </html>

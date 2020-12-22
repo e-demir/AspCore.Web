@@ -8,12 +8,18 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <title>Index</title>
 </head>
 <body>
-    @ViewBag.Message student!
+    <div class="text-center">
+        <h3>
+            @ViewBag.Message student!
+        </h3>
+        <br />
+        <a asp-action="apply" class="btn btn-primary">Apply the course</a>
+    </div>
 
-    <a asp-action="apply">Apply the course</a>
 
 </body>
 </html>
